@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -23,12 +23,12 @@
 
     <div style="height: 20vh;"></div>
 
-    <div class="position-fixed start-50 bottom-0 translate-middle-x my-3 container">
-        <div class="card" data-bs-theme="dark">
+    <div class="position-fixed start-50 bottom-0 translate-middle-x my-3 container d-flex justify-content-center align-items-center">
+        <div class="card rounded-4 shadow" style="max-width: 600px;" data-bs-theme="dark">
             <div class="card-body px-5 text-center">
                 <div class="d-flex flex-wrap justify-content-center align-items-center gap-3">
                     <span>Silakan konfirmasi kehadiran anda: </span>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <button type="button" class="btn btn-primary fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         Konfirmasi
                     </button>
                 </div>
@@ -39,7 +39,7 @@
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-scrollable modal-fullscreen-lg-down">
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header border-0">
                     <h1 class="modal-title fs-5" id="exampleModalLabel">Formulir Kehadiran</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" data-bs-target="#exampleModal" aria-label="Close"></button>
                 </div>
@@ -56,7 +56,7 @@
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.4/dist/confetti.browser.min.js"></script>
     <script>
         window.addEventListener('DOMContentLoaded', () => {
-            const duration = 3 * 1000; // 3 Detik
+            const duration = 5 * 1000;
             const end = Date.now() + duration;
 
             (function frame() {
